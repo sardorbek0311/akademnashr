@@ -125,15 +125,17 @@ body {
 
 .site_footer {
   background-color: #f8f8f8;
+  display: block;
 }
 
-.site_foter_top {
+.site_footer_top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .site_footer_socials {
   display: flex;
+  align-items: center;
 }
 
 .site_footer_bottom {
