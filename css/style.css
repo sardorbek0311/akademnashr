@@ -12,6 +12,18 @@ body {
   color: #fff;
 }
 
+.logo_link {
+  transition: opacity 0.4s ease;
+}
+
+.logo_link:hover {
+opacity: 0.8;
+}
+
+.logo_link:active {
+ opacity: 0.6;
+}
+
 .site_header_action {
   display: flex;
   align-items: center;
@@ -22,6 +34,7 @@ body {
   list-style-type: none;
   display: flex;
 }
+
 .sitenav_link {
   font-size: 13px;
   line-height: 15px;
@@ -30,9 +43,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-  padding-right: 15px;
+transition: color 0.3s ease, opacity 0.4 ease;
+  /* padding-right: 15px; */
 }
 
+.sitenav_link:hover{
+color: #ff7500;
+}
+.site_link:active{
+  opacity: 0.8;
+}
 .main_link {
   font-size: 13px;
   line-height: 15px;
@@ -40,8 +60,15 @@ body {
   text-decoration: none;
   background-color: #ff7500;
   color: #ffffff;
+  transition: opacity 0.4 ease;
 }
 
+.main_link:hover{
+opacity: 0.8;
+}
+.main_link:focus{
+opacity: 0.6;
+}
 .hero {
   background-color: #252420;
   color: #fff;
@@ -49,9 +76,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .hero_content {
   width: 390px;
 }
+
 .orange_line {
   height: 3px;
   width: 80px;
@@ -69,6 +98,7 @@ body {
   height: 510px;
   width: 510px;
 }
+
 .features_heading {
   width: 440px;
   font-size: 72px;
@@ -86,6 +116,7 @@ body {
 .feature {
   width: 340px;
 }
+
 .feature_icon_wrapper {
   width: 100px;
   height: 100px;
@@ -105,9 +136,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .promo_content {
   width: 440px;
 }
+
 .promo_heading {
   font-size: 40px;
   line-height: 48px;
@@ -117,6 +150,7 @@ body {
 .promo_highlight {
   color: #ff7500;
 }
+
 .promo_img {
   width: 440px;
   height: 440px;
@@ -133,26 +167,46 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .site_footer_socials {
   display: flex;
   align-items: center;
 }
-
+.site_footer_socials a{
+  color: #222;
+}
+.site_footer_socials a:hover{
+color: #ff7500;
+}
+.site_footer_socials a:active{
+  opacity: 0.6;
+  }
 .site_footer_bottom {
   display: flex;
 }
+
 .site_footer ul {
   list-style-type: none;
 }
+
 .site_footer_devider {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
 }
+
 .site_footer_links {
   width: 224px;
   line-height: 19px;
 }
+
 .site_footer_links a {
   text-decoration: none;
   color: #252420;
+}
+.site_footer_links a:hover{
+  color: #ff7500;
+}
+
+.site_footer_links a:focus{
+  opacity: 0.6;
 }
